@@ -1,0 +1,65 @@
+<html>  
+<head>  
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"> 
+    <script src="script.js"></script>
+</head>  
+ 
+  
+<body>  
+
+    <form id="regForm" class="login-card-form"   method="post" action="#" onsubmit="return validation()">
+        <div class="login-card-container">
+          <div class="login-card">
+            <div class="login-card-header">
+              <h1>Sign Up</h1>      
+              <div>Please sign up to join our community</div>
+              </div>   
+  
+  
+<!-- Enter name -->  
+<div >
+<label><i class="ri-user-fill"></i> Name* </label>  
+<input type = "text" id = "fname" value = ""  autocomplete="off" >   
+<span id = "username" style="color:red"> </span> </div><br>
+  
+<!-- Enter email -->  
+<div>
+<label for="email"><i class="ri-mail-fill"></i> E-Mail*</label>  
+<input type = "text" id = "email" class="form-control" value = ""  autocomplete="off">   
+<span id = "emailerror" style="color:red"> </span> </div> <br>
+  
+ 
+<!-- Create a new password -->  
+<div>
+<label for="psw"><i class="ri-lock-2-fill"></i> Password*</label>
+<input type="password" id="psw"  name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+<span id = "passerror" style="color:red"> </span></div><br>
+  
+<!--Enter confirm password -->  
+<div>
+<td> <i class="ri-lock-password-fill"></i> Confirm Password* </td>  
+<input type = "password" id = "psw2" value = "" >   
+<span id = "confpasserror" style="color:red"> </span> </div> <br>
+  
+<!-- Click to verify valid password -->  
+<button type = "submit" value = "Submit">  Submit </button>
+  
+<!-- Click to reset fields -->  
+<button type = "reset" value = "Reset" >Reset</button>  
+</form>  
+
+
+<div class="login-card-social">
+    <div>Other Sign-up Platform:</div>
+    <div class="login-card-social-btn">
+      <span><i class="ri-facebook-circle-fill"></i></span>
+      <span><i class="ri-google-fill"></i></span>
+      <span><i class="ri-instagram-fill"></i></span>
+    </div>
+  </div>
+
+  
+  </body>
+  </html>
